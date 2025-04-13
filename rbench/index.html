@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset">
-  <meta name="keywords" content="mathvision, Math Vision">
+  <meta name="description" content="R-Bench: Graduate-level Multi-disciplinary Benchmarks for LLM \& MLLM Complex Reasoning Evaluation">
+  <meta name="keywords" content="Reasoning Benchmarks">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset </title>
+  <title> R-Bench: Graduate-level Multi-disciplinary Benchmarks for LLM \& MLLM Complex Reasoning Evaluation </title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -22,8 +22,7 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link rel="icon" href="./static/images/mathvision.png">
-
+  <link rel="icon" href="./static/assets/examples/rbench_images/logo_v2.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -86,15 +85,12 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="subtitle is-3 publication-subtitle">
-              Measuring Multimodal Mathematical Reasoning
-              <br>
-              with the MATH-Vision Dataset
-              <br>
+              <b>R-Bench: Graduate-level Multi-disciplinary Benchmarks for  <br>
+              LLM & MLLM Complex Reasoning Evaluation </b>             <br>
             </h1>
-
             <h1 class="subtitle is-3 publication-title is-bold">
               <!-- <img src="static/images/mathvision.png" style="width:1em;vertical-align: middle" alt="Logo" /> -->
-              <span class="MATH-V" style="vertical-align: middle"><strong style="color:#ff4800">NeurIPS DB Track, 2024
+              <span class="R-Bench" style="vertical-align: middle"><strong style="color:#ff4800">In Submission
                 </strong></span>
             </h1>
 
@@ -180,14 +176,12 @@
       <div class="columns is-centered m-6">
         <div class="column is-full has-text-centered content">
           <div class="content has-text-centered">
-            <img src="static/assets/figure1_new.png" alt="geometric reasoning" width="81%" />
-            <p>
-              <b class="best-score-text">[2024-05-20]</b>
-              (a) Zero-shot accuracies of four prominent Large Multimodal Models (LMMs), random chance, and human
-              performance are evaluated on our proposed MATH-V across 16 subjects. Teal means newly introduced subjects.
-              (b) Examples of easy problems in MATH-V failed by top-performing LMMs on MathVista. The three questions
-              come from tests designed for elementary school students.
-            </p>
+            <img src="images/teaser.png" alt="geometric reasoning" width="62%" />
+            <p> <b class="best-score-text">R denotes reasoning.</b>
+               According to statistics on R-Bench, the benchmark spans 19 departments, including mathematics, physics, biology, computer science, and chemistry, 
+              covering over 100 subjects such as Inorganic Chemistry, Chemical Reaction Kinetics, and Electromagnetism. It features 1,094 questions designed for testing 
+              language models and 665 questions specifically tailored for evaluating multimodal reasoning capabilities.   
+             </p>
           </div>
         </div>
       </div>
@@ -199,13 +193,11 @@
       <div class="columns is-centered m-6">
         <div class="column is-full has-text-centered content">
           <div class="content has-text-centered">
-            <img src="static/assets/figure1.png" alt="geometric reasoning" width="90%" />
+            <img src="images/bench_compare.png" alt="benchmarks comparsion" width="90%" />
             <p>
-              <b class="best-score-text">[2024-02-21]</b>
-              The accuracies of four prominent Large Multimodal Models (LMMs), random chance, and human performance are
-              evaluated on our proposed MATH-Vision (MATH-V) across 16 subjects and 5 levels of
-              difficulty, with Level 1 being the easiest and Level 5 the most challenging. Human performance is assessed
-              using the testmini subset.
+              Comparison with different benchmarks such as MMLU, MMMU, etc. 
+              R-Bench has a higher reasoning difficulty, even reaching the o1 
+              saturation similar to the competition data AIME@2024.
             </p>
           </div>
         </div>
