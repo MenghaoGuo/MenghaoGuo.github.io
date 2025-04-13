@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset">
+  <meta name="keywords" content="mathvision, Math Vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+/Users/panlu/Library/Mobile Documents/com~apple~CloudDocs/ImageMath/visual-mathqa-server/data_final/images
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link rel="icon" href="./static/images/mathvision.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>
+  <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://chameleon-llm.github.io/">
+              <b>Chameleon</b>
+              <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">
+              <!-- <img src="static/images/mathvision.png" style="width:1em;vertical-align: middle" alt="Logo" /> -->
+              <span class="MATH-V" style="vertical-align: middle">MATH-V</span>
+            </h1>
+            <h2 class="subtitle is-3 publication-subtitle">
+              Measuring Multimodal Mathematical Reasoning with
+              <br>
+              the MATH-Vision Dataset
+            </h2>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="homepage"></a>author<sup style="color:#6fbf73;">1</sup>,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup style="color:#6fbf73;">1</sup>University,</span>
+            </div> -->
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <!-- @PAN TODO: change links -->
+                  <a href="https://arxiv.org/pdf/2402.14804.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2402.14804" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/mathvision-cuhk/MathVision"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/mathvision/mathvision"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+                <!-- Visualization Link. -->
+                <span class="link-block">
+                  <a href="https://mathvision-cuhk.github.io/#visualization"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🔮</p>
+                    </span>
+                    <span>Visualize</span>
+                  </a>
+                </span>
+                <!-- Leaderboard Link. -->
+                <span class="link-block">
+                  <a href="https://mathvision-cuhk.github.io/#leaderboard"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🏆</p>
+                    </span>
+                    <span>Leaderboard</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="section">
+    <div class="container" style="margin-top: -150px; margin-bottom: -100px;">
+      <div class="columns is-centered m-6">
+        <div class="column is-full has-text-centered content">
+          <div class="content has-text-centered">
+            <img src="static/assets/figure1.png" alt="geometric reasoning" width="100%" />
+            <p> The accuracies of four prominent Large Multimodal Models (LMMs), random chance, and human
+              performance are evaluated on our proposed MATH-Vision (MATH-V) across 16 subjects and 5 levels of
+              difficulty,
+              with Level 1 being the easiest and Level 5 the most challenging. Human performance is assessed using the
+              testmini
+              subset.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="margin-bottom: 2vh;">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Introduction</h2>
+          <div class="content has-text-justified">
+            <p>
+              Recent advancements in <b>Large Multimodal Models (LMMs)</b> have shown promising results in mathematical
+              reasoning within visual contexts, with models approaching human-level performance on existing benchmarks
+              such as mathvision. However, we observe significant limitations in the diversity of questions and breadth
+              of subjects covered by these benchmarks.
+            </p>
+            <p>
+              To address this issue, we present the <b>Math-Vision (Math-V)</b> dataset, a meticulously curated
+              collection of <b>3,040 high-quality mathematical problems</b> with visual contexts sourced from real math
+              competitions. Spanning <b>16 distinct mathematical disciplines</b> and graded across <b>5 levels</b> of
+              difficulty, our dataset provides a comprehensive and diverse set of challenges for evaluating the
+              mathematical reasoning abilities of LMMs.
+            </p>
+            <p>
+              Through extensive experimentation, we unveil a notable performance gap between current LMMs and human
+              performance on Math-V, underscoring the imperative for further advancements in LMMs. Moreover, our
+              detailed categorization allows for a thorough error analysis of LMMs, offering valuable insights to guide
+              future research and development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered content">
+          <h2 class="title is-3" id="leaderboard">Leaderboard on test</h2>
+          <div class="content">
+            <p class="mt-3">Accuracy scores on the <b>test</b> set
+              of <b>Math-Vision (Math-V)</b>.
+            </p>
+
+            <table class="js-sort-table" id="results">
+              <tr>
+                <td class="js-sort-number"><strong>#</strong></td>
+                <td class="js-sort-number"><strong>Model</strong></td>
+                <!-- <td class="js-sort-number"><strong>Source</strong></td> -->
+                <td class="js-sort-number"><strong>Date</strong></td>
+                <td class="js-sort-number"><strong><u>ALL</u></strong></td>
+                <td class="js-sort-number"><strong>Alg</strong></td>
+                <td class="js-sort-number"><strong>AnaG</strong></td>
+                <td class="js-sort-number"><strong>Ari</strong></td>
+                <td class="js-sort-number"><strong>CombG</strong></td>
+                <td class="js-sort-number"><strong>Comb</strong></td>
+                <td class="js-sort-number"><strong>Cnt</strong></td>
+                <td class="js-sort-number"><strong>DescG</strong></td>
+                <td class="js-sort-number"><strong>GrphT</strong></td>
+                <td class="js-sort-number"><strong>Log</strong></td>
+                <td class="js-sort-number"><strong>Angle</strong></td>
+                <td class="js-sort-number"><strong>Area</strong></td>
+                <td class="js-sort-number"><strong>Len</strong></td>
+                <td class="js-sort-number"><strong>SolG</strong></td>
+                <td class="js-sort-number"><strong>Stat</strong></td>
+                <td class="js-sort-number"><strong>Topo</strong></td>
+                <td class="js-sort-number"><strong>TransG</strong></td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td><b class="">Human* (testmini)</b></td>
+                <!-- <td><a href="https://github.com/InternLM/InternLM-XComposer" class="ext-link"
+                style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">75.66</b></td>
+                <td>57.9</td>
+                <td>79.0</td>
+                <td>100.0</td>
+                <td>100.0</td>
+                <td>47.4</td>
+                <td>94.7</td>
+                <td>89.5</td>
+                <td>63.2</td>
+                <td>63.2</td>
+                <td>36.8</td>
+                <td>52.6</td>
+                <td>73.7</td>
+                <td>89.5</td>
+                <td>89.5</td>
+                <td>100.0</td>
+                <td>73.7</td>
+              </tr>
+              <td>1</td>
+              <td><b class="best-score-text">CoT GPT4V 🥇</b></td>
+              <!-- <td><a href="https://github.com/InternLM/InternLM-XComposer" class="ext-link"
+              style="font-size: 16px;">Link</a></td> -->
+              <td>2024-02-21</td>
+              <td><b class="best-score-text">23.98</b></td>
+              <td>26.7</td>
+              <td>26.2</td>
+              <td>38.6</td>
+              <td>22.1</td>
+              <td>24.4</td>
+              <td>19.4</td>
+              <td>27.9</td>
+              <td>23.3</td>
+              <td>25.2</td>
+              <td>17.3</td>
+              <td>21.4</td>
+              <td>23.4</td>
+              <td>23.8</td>
+              <td>25.9</td>
+              <td>4.4</td>
+              <td>25.6</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><b class="best-score-text">GPT4V 🥈</b></td>
+                <!-- <td><a href="https://github.com/QwenLM/Qwen-VL" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="best-score-text">22.76</b></td>
+                <td>27.3</td>
+                <td>32.1</td>
+                <td>35.7</td>
+                <td>21.1</td>
+                <td>16.7</td>
+                <td>13.4</td>
+                <td>22.1</td>
+                <td>14.4</td>
+                <td>16.8</td>
+                <td>22.0</td>
+                <td>22.2</td>
+                <td>20.9</td>
+                <td>23.8</td>
+                <td>24.1</td>
+                <td>21.7</td>
+                <td>25.6</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><b class="best-score-text">Gemini Pro 🥉</b></td>
+                <!-- <td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link"
+                style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="best-score-text">17.66</b></td>
+                <td>15.1</td>
+                <td>10.7</td>
+                <td>20.7</td>
+                <td>20.1</td>
+                <td>11.9</td>
+                <td>7.5</td>
+                <td>20.2</td>
+                <td>21.1</td>
+                <td>16.8</td>
+                <td>19.1</td>
+                <td>19.0</td>
+                <td>20.0</td>
+                <td>14.3</td>
+                <td>13.8</td>
+                <td>17.4</td>
+                <td>20.8</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><b class="">Qwen-VL-Max</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">15.59</b></td>
+                <td>10.7</td>
+                <td>19.1</td>
+                <td>20.0</td>
+                <td>16.9</td>
+                <td>12.5</td>
+                <td>17.9</td>
+                <td>16.4</td>
+                <td>12.2</td>
+                <td>21.0</td>
+                <td>13.3</td>
+                <td>14.2</td>
+                <td>19.8</td>
+                <td>11.5</td>
+                <td>20.7</td>
+                <td>13.0</td>
+                <td>17.3</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><b>InternLM-XComposer2-VL</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">14.54</b></td>
+                <td>9.3</td>
+                <td>15.5</td>
+                <td>12.1</td>
+                <td>15.3</td>
+                <td>11.3</td>
+                <td>10.5</td>
+                <td>14.4</td>
+                <td>22.2</td>
+                <td>19.3</td>
+                <td>19.7</td>
+                <td>15.6</td>
+                <td>15.0</td>
+                <td>11.9</td>
+                <td>15.5</td>
+                <td>26.1</td>
+                <td>15.5</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td><b>GPT 4-CoT (caption)</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">13.10</b></td>
+                <td>16.5</td>
+                <td>20.2</td>
+                <td>34.3</td>
+                <td>10.4</td>
+                <td>17.9</td>
+                <td>19.4</td>
+                <td>7.7</td>
+                <td>11.1</td>
+                <td>10.1</td>
+                <td>9.8</td>
+                <td>9.6</td>
+                <td>9.1</td>
+                <td>13.5</td>
+                <td>13.8</td>
+                <td>8.7</td>
+                <td>12.5</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><b>ShareGPT4V-13B</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">11.88</b></td>
+                <td>7.5</td>
+                <td>15.5</td>
+                <td>16.4</td>
+                <td>10.7</td>
+                <td>8.9</td>
+                <td>9.0</td>
+                <td>11.5</td>
+                <td>8.9</td>
+                <td>7.6</td>
+                <td>11.6</td>
+                <td>13.0</td>
+                <td>17.4</td>
+                <td>10.3</td>
+                <td>8.6</td>
+                <td>8.7</td>
+                <td>12.5</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><b>LLaVA-v1.5-13B</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">11.12</b></td>
+                <td>7.0</td>
+                <td>14.3</td>
+                <td>14.3</td>
+                <td>9.1</td>
+                <td>6.6</td>
+                <td>6.0</td>
+                <td>13.5</td>
+                <td>5.6</td>
+                <td>13.5</td>
+                <td>10.4</td>
+                <td>12.6</td>
+                <td>14.7</td>
+                <td>11.5</td>
+                <td>13.8</td>
+                <td>13.0</td>
+                <td>10.7</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><b>Qwen-VL-Plus</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">10.72</b></td>
+                <td>11.3</td>
+                <td>17.9</td>
+                <td>14.3</td>
+                <td>12.7</td>
+                <td>4.8</td>
+                <td>10.5</td>
+                <td>15.4</td>
+                <td>8.9</td>
+                <td>14.3</td>
+                <td>11.6</td>
+                <td>6.4</td>
+                <td>10.0</td>
+                <td>14.3</td>
+                <td>6.9</td>
+                <td>8.7</td>
+                <td>11.31</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><b>ShareGPT4V-7B</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">10.53</b></td>
+                <td>5.5</td>
+                <td>3.6</td>
+                <td>12.9</td>
+                <td>10.1</td>
+                <td>4.8</td>
+                <td>7.5</td>
+                <td>11.5</td>
+                <td>14.4</td>
+                <td>10.9</td>
+                <td>16.2</td>
+                <td>11.8</td>
+                <td>12.3</td>
+                <td>9.8</td>
+                <td>15.5</td>
+                <td>17.4</td>
+                <td>11.3</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td><b>SPHINX (V2)</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">9.70</b></td>
+                <td>6.7</td>
+                <td>7.1</td>
+                <td>12.9</td>
+                <td>7.5</td>
+                <td>7.7</td>
+                <td>6.0</td>
+                <td>9.6</td>
+                <td>16.7</td>
+                <td>10.1</td>
+                <td>11.0</td>
+                <td>11.8</td>
+                <td>12.5</td>
+                <td>8.2</td>
+                <td>8.6</td>
+                <td>8.7</td>
+                <td>6.0</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td><b>LLaVA-v1.5-7B</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">8.52</b></td>
+                <td>7.0</td>
+                <td>7.1</td>
+                <td>10.7</td>
+                <td>7.1</td>
+                <td>4.8</td>
+                <td>10.5</td>
+                <td>7.7</td>
+                <td>10.0</td>
+                <td>9.2</td>
+                <td>15.6</td>
+                <td>10.2</td>
+                <td>9.8</td>
+                <td>5.3</td>
+                <td>8.6</td>
+                <td>4.4</td>
+                <td>4.8</td>
+              </tr>
+
+              <tr>
+                <td>*</td>
+                <td><b>Random Chance</b></td>
+                <!-- <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td> -->
+                <td>2024-02-21</td>
+                <td><b class="">7.17</b></td>
+                <td>1.5</td>
+                <td>11.9</td>
+                <td>7.1</td>
+                <td>9.7</td>
+                <td>4.8</td>
+                <td>6.0</td>
+                <td>22.1</td>
+                <td>1.1</td>
+                <td>7.6</td>
+                <td>0.6</td>
+                <td>9.4</td>
+                <td>6.7</td>
+                <td>8.2</td>
+                <td>8.6</td>
+                <td>13.0</td>
+                <td>7.1</td>
+              </tr>
+            </table>
+
+            <b>Human*:</b> Average human performance from annotators who have high school diplomas or above.
+            <br>
+            <b>Subjects:</b> <b>Alg</b>: algebra,
+            <b> AnaG</b>: analytic geometry,
+            <b> Ari</b>: arithmetic,
+            <b> CombG</b>: combinatorial geometry,<br>
+            <b> Comb</b>: combinatorics,
+            <b> Cnt</b>: counting,
+            <b> DescG</b>: descriptive geometry,
+            <b> GrphT</b>: graph theory,
+            <b> Log</b>: logic,<br>
+            <b> Angle</b>: metric geometry - angle,
+            <b> Area</b>: metric geometry - area,
+            <b> Len</b>: metric geometry-length,<br>
+            <b> SolG</b>: solid geometry,
+            <b> Stat</b>: statistics,
+            <b> Topo</b>: topology,
+            <b> TransG</b>: transformation geometry.
+            <br>
+            <br>
+            <div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DATASET SECTION -->
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <!-- <h1 class="title is-1 mathvision"><img src="static/images/mathvision.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>mathvision Dataset</h1> -->
+      <h1 class="title is-1 mathvision">
+        <span class="mathvision" style="vertical-align: middle">Math-V Dataset</span>
+      </h1>
+
+      <div id="container" style="height: 100%"></div>
+
+
+      <section class="section">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <!-- <div class="column is-full-width has-text-centered"> -->
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Overview</h2>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column" style="margin-right: -6rem;">
+              <div class="content has-text-centered">
+                <img src="static/assets/statistics.png" alt="data-overview" style="max-width: 72%;" />
+                <p>
+                  Key statistics of <b>Math-V</b><br />
+                </p>
+              </div>
+            </div>
+            <div class="column" style="margin-right: 6rem;">
+              <div class="content has-text-centered">
+                <img src="static/assets/level_distribution.png" alt="data-composition" style="max-width: 95%;" />
+                <p>
+                  Comparison of the level distribution between our <br>
+                  <b>Math-V</b> and the MATH dataset.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="columns is-centered m-6">
+          <div class="column is-full has-text-centered content">
+            <h2 class="title is-3">Distribution</h2>
+            <p>levels, subjects and sources distribution of
+              <b>MATH-V</b>.
+            </p>
+          </div>
+        </div>
+        <iframe src="visualizer/sankey.html"
+          style="width: 72%;min-height: 100vh; border-radius: 20px;margin-right: -10rem;"></iframe>
+
+    </div>
+
+
+    <div class="columns is-centered m-6">
+      <div class="column is-max-desktop has-text-centered">
+        <h2 class="title is-3" id="visualization">Visualization</h2>
+        <iframe src="visualizer/explore.html" style="width: 72%;min-height: 100vh; border-radius: 20px;"></iframe>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container">
+
+      <div class="columns is-centered m-6">
+        <div class="column is-full has-text-centered content">
+          <h2 class="title is-3">Some Images from 16 Subjects</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_algebra-1.png" alt="imgs_algebra" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_analytic_geo-1.png" alt="imgs_analytic_geo" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_arithmetic-1.png" alt="imgs_arithmetic" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_comb_geo-1.png" alt="imgs_comb_geo" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_comb-1.png" alt="imgs_comb" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_counting-1.png" alt="imgs_counting" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_desc_geo-1.png" alt="imgs_desc_geo" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_graph-1.png" alt="imgs_graph" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_logic-1.png" alt="imgs_logic" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_angle-1.png" alt="imgs_angle" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_area-1.png" alt="imgs_area" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_length-1.png" alt="imgs_length" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_solid_geo-1.png" alt="imgs_solid_geo" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_stat-1.png" alt="imgs_stat" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_topo-1.png" alt="imgs_topo" width="88%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/assets/imgs_trans_geo-1.png" alt="imgs_trans_geo" width="88%" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- @PAN TODO: bibtex -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3 has-text-centered">BibTeX</h2>
+      <pre>
+        <code>@misc{wang2024measuring,
+        title={Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset}, 
+        author={Ke Wang and Junting Pan and Weikang Shi and Zimu Lu and Mingjie Zhan and Hongsheng Li},
+        year={2024},
+        eprint={2402.14804},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+        }</code>
+</pre>
+    </div>
+
+
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3 has-text-centered">Acknowledgement</h2>
+      We would like to thank <a href="https://mathvista.github.io/">MathVista</a> for this website, which is
+            adapted from <a href="https://nerfies.github.io/">Nerfies</a>, licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            <pre>
+                <code>@inproceedings{lu2024mathvista,
+                  author    = {Lu, Pan and Bansal, Hritik and Xia, Tony and Liu, Jiacheng and Li, Chunyuan and Hajishirzi, Hannaneh and Cheng, Hao and Chang, Kai-Wei and Galley, Michel and Gao, Jianfeng},
+                  title     = {MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts},
+                  booktitle={International Conference on Learning Representations (ICLR)},
+                  year      = {2024}
+                }</code>
+        </pre>
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>

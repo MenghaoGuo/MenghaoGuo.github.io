@@ -1,0 +1,1364 @@
+{
+  "nodes": [
+    {
+      "name": "Total"
+    },
+    {
+      "name": "Level 2"
+    },
+    {
+      "name": "arithmetic"
+    },
+    {
+      "name": "European\nKangaroo"
+    },
+    {
+      "name": "Level 1"
+    },
+    {
+      "name": "metric\ngeometry-length"
+    },
+    {
+      "name": "counting"
+    },
+    {
+      "name": "Level 3"
+    },
+    {
+      "name": "logic"
+    },
+    {
+      "name": "graph theory"
+    },
+    {
+      "name": "solid\ngeometry"
+    },
+    {
+      "name": "transformation\ngeometry"
+    },
+    {
+      "name": "combinatorial\ngeometry"
+    },
+    {
+      "name": "Level 5"
+    },
+    {
+      "name": "topology"
+    },
+    {
+      "name": "metric\ngeometry-area"
+    },
+    {
+      "name": "analytic\ngeometry"
+    },
+    {
+      "name": "descriptive\ngeometry"
+    },
+    {
+      "name": "combinatorics"
+    },
+    {
+      "name": "algebra"
+    },
+    {
+      "name": "Level 4"
+    },
+    {
+      "name": "metric\ngeometry-angle"
+    },
+    {
+      "name": "statistics"
+    },
+    {
+      "name": "Grey\nKangaroo"
+    },
+    {
+      "name": "Junior\nKangaroo"
+    },
+    {
+      "name": "Pink\nKangaroo"
+    },
+    {
+      "name": "Senior"
+    },
+    {
+      "name": "AIME"
+    },
+    {
+      "name": "AMC10"
+    },
+    {
+      "name": "AMC12"
+    },
+    {
+      "name": "AMC8"
+    },
+    {
+      "name": "BMT"
+    },
+    {
+      "name": "CHMMC"
+    },
+    {
+      "name": "CMIMC"
+    },
+    {
+      "name": "ASMT"
+    },
+    {
+      "name": "CMWMC"
+    },
+    {
+      "name": "DMM"
+    },
+    {
+      "name": "YaleGirlsMath"
+    },
+    {
+      "name": "HMMT"
+    },
+    {
+      "name": "JHMT"
+    },
+    {
+      "name": "Others"
+    }
+  ],
+  "links": [
+    {
+      "source": "Total",
+      "target": "Level 2",
+      "value": 738
+    },
+    {
+      "source": "Total",
+      "target": "Level 1",
+      "value": 237
+    },
+    {
+      "source": "Total",
+      "target": "Level 3",
+      "value": 551
+    },
+    {
+      "source": "Total",
+      "target": "Level 5",
+      "value": 684
+    },
+    {
+      "source": "Total",
+      "target": "Level 4",
+      "value": 830
+    },
+    {
+      "source": "Level 2",
+      "target": "arithmetic",
+      "value": 37
+    },
+    {
+      "source": "Level 2",
+      "target": "transformation\ngeometry",
+      "value": 10
+    },
+    {
+      "source": "Level 2",
+      "target": "analytic\ngeometry",
+      "value": 11
+    },
+    {
+      "source": "Level 2",
+      "target": "descriptive\ngeometry",
+      "value": 12
+    },
+    {
+      "source": "Level 2",
+      "target": "algebra",
+      "value": 126
+    },
+    {
+      "source": "Level 2",
+      "target": "combinatorial\ngeometry",
+      "value": 120
+    },
+    {
+      "source": "Level 2",
+      "target": "logic",
+      "value": 36
+    },
+    {
+      "source": "Level 2",
+      "target": "counting",
+      "value": 33
+    },
+    {
+      "source": "Level 2",
+      "target": "metric\ngeometry-area",
+      "value": 32
+    },
+    {
+      "source": "Level 2",
+      "target": "graph theory",
+      "value": 47
+    },
+    {
+      "source": "Level 2",
+      "target": "metric\ngeometry-length",
+      "value": 82
+    },
+    {
+      "source": "Level 2",
+      "target": "combinatorics",
+      "value": 42
+    },
+    {
+      "source": "Level 2",
+      "target": "metric\ngeometry-angle",
+      "value": 46
+    },
+    {
+      "source": "Level 2",
+      "target": "solid\ngeometry",
+      "value": 57
+    },
+    {
+      "source": "Level 2",
+      "target": "topology",
+      "value": 3
+    },
+    {
+      "source": "Level 2",
+      "target": "statistics",
+      "value": 44
+    },
+    {
+      "source": "arithmetic",
+      "target": "European\nKangaroo",
+      "value": 127
+    },
+    {
+      "source": "arithmetic",
+      "target": "Grey\nKangaroo",
+      "value": 5
+    },
+    {
+      "source": "arithmetic",
+      "target": "Junior\nKangaroo",
+      "value": 1
+    },
+    {
+      "source": "arithmetic",
+      "target": "Pink\nKangaroo",
+      "value": 4
+    },
+    {
+      "source": "arithmetic",
+      "target": "Senior",
+      "value": 1
+    },
+    {
+      "source": "arithmetic",
+      "target": "AMC8",
+      "value": 2
+    },
+    {
+      "source": "Level 1",
+      "target": "metric\ngeometry-length",
+      "value": 17
+    },
+    {
+      "source": "Level 1",
+      "target": "counting",
+      "value": 26
+    },
+    {
+      "source": "Level 1",
+      "target": "graph theory",
+      "value": 2
+    },
+    {
+      "source": "Level 1",
+      "target": "solid\ngeometry",
+      "value": 15
+    },
+    {
+      "source": "Level 1",
+      "target": "combinatorial\ngeometry",
+      "value": 32
+    },
+    {
+      "source": "Level 1",
+      "target": "metric\ngeometry-area",
+      "value": 20
+    },
+    {
+      "source": "Level 1",
+      "target": "combinatorics",
+      "value": 5
+    },
+    {
+      "source": "Level 1",
+      "target": "algebra",
+      "value": 7
+    },
+    {
+      "source": "Level 1",
+      "target": "logic",
+      "value": 19
+    },
+    {
+      "source": "Level 1",
+      "target": "descriptive\ngeometry",
+      "value": 7
+    },
+    {
+      "source": "Level 1",
+      "target": "arithmetic",
+      "value": 6
+    },
+    {
+      "source": "Level 1",
+      "target": "topology",
+      "value": 2
+    },
+    {
+      "source": "Level 1",
+      "target": "transformation\ngeometry",
+      "value": 45
+    },
+    {
+      "source": "Level 1",
+      "target": "analytic\ngeometry",
+      "value": 3
+    },
+    {
+      "source": "Level 1",
+      "target": "statistics",
+      "value": 5
+    },
+    {
+      "source": "Level 1",
+      "target": "metric\ngeometry-angle",
+      "value": 26
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "European\nKangaroo",
+      "value": 138
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "Grey\nKangaroo",
+      "value": 30
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "Junior\nKangaroo",
+      "value": 10
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "Pink\nKangaroo",
+      "value": 37
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "Senior",
+      "value": 9
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "AIME",
+      "value": 17
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "AMC10",
+      "value": 34
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "AMC12",
+      "value": 100
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "AMC8",
+      "value": 29
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "BMT",
+      "value": 1
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "CHMMC",
+      "value": 1
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "CMIMC",
+      "value": 2
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "CMWMC",
+      "value": 4
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "DMM",
+      "value": 2
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "JHMT",
+      "value": 3
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "HMMT",
+      "value": 2
+    },
+    {
+      "source": "metric\ngeometry-length",
+      "target": "Others",
+      "value": 30
+    },
+    {
+      "source": "counting",
+      "target": "European\nKangaroo",
+      "value": 63
+    },
+    {
+      "source": "counting",
+      "target": "Grey\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "counting",
+      "target": "AMC10",
+      "value": 1
+    },
+    {
+      "source": "counting",
+      "target": "AMC8",
+      "value": 1
+    },
+    {
+      "source": "Level 3",
+      "target": "logic",
+      "value": 16
+    },
+    {
+      "source": "Level 3",
+      "target": "solid\ngeometry",
+      "value": 59
+    },
+    {
+      "source": "Level 3",
+      "target": "statistics",
+      "value": 8
+    },
+    {
+      "source": "Level 3",
+      "target": "metric\ngeometry-length",
+      "value": 32
+    },
+    {
+      "source": "Level 3",
+      "target": "arithmetic",
+      "value": 69
+    },
+    {
+      "source": "Level 3",
+      "target": "combinatorics",
+      "value": 37
+    },
+    {
+      "source": "Level 3",
+      "target": "metric\ngeometry-angle",
+      "value": 6
+    },
+    {
+      "source": "Level 3",
+      "target": "transformation\ngeometry",
+      "value": 49
+    },
+    {
+      "source": "Level 3",
+      "target": "metric\ngeometry-area",
+      "value": 132
+    },
+    {
+      "source": "Level 3",
+      "target": "topology",
+      "value": 7
+    },
+    {
+      "source": "Level 3",
+      "target": "graph theory",
+      "value": 16
+    },
+    {
+      "source": "Level 3",
+      "target": "analytic\ngeometry",
+      "value": 15
+    },
+    {
+      "source": "Level 3",
+      "target": "counting",
+      "value": 5
+    },
+    {
+      "source": "Level 3",
+      "target": "algebra",
+      "value": 65
+    },
+    {
+      "source": "Level 3",
+      "target": "combinatorial\ngeometry",
+      "value": 32
+    },
+    {
+      "source": "Level 3",
+      "target": "descriptive\ngeometry",
+      "value": 3
+    },
+    {
+      "source": "logic",
+      "target": "European\nKangaroo",
+      "value": 91
+    },
+    {
+      "source": "logic",
+      "target": "Grey\nKangaroo",
+      "value": 12
+    },
+    {
+      "source": "logic",
+      "target": "Junior\nKangaroo",
+      "value": 5
+    },
+    {
+      "source": "logic",
+      "target": "Pink\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "logic",
+      "target": "Senior",
+      "value": 6
+    },
+    {
+      "source": "logic",
+      "target": "AMC12",
+      "value": 1
+    },
+    {
+      "source": "logic",
+      "target": "AMC8",
+      "value": 1
+    },
+    {
+      "source": "logic",
+      "target": "YaleGirlsMath",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "European\nKangaroo",
+      "value": 65
+    },
+    {
+      "source": "graph theory",
+      "target": "Grey\nKangaroo",
+      "value": 7
+    },
+    {
+      "source": "graph theory",
+      "target": "Junior\nKangaroo",
+      "value": 5
+    },
+    {
+      "source": "graph theory",
+      "target": "Pink\nKangaroo",
+      "value": 3
+    },
+    {
+      "source": "graph theory",
+      "target": "Senior",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "AIME",
+      "value": 2
+    },
+    {
+      "source": "graph theory",
+      "target": "AMC10",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "AMC12",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "AMC8",
+      "value": 2
+    },
+    {
+      "source": "graph theory",
+      "target": "CHMMC",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "CMIMC",
+      "value": 1
+    },
+    {
+      "source": "graph theory",
+      "target": "YaleGirlsMath",
+      "value": 1
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "European\nKangaroo",
+      "value": 107
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "Grey\nKangaroo",
+      "value": 22
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "Junior\nKangaroo",
+      "value": 6
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "Pink\nKangaroo",
+      "value": 16
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "Senior",
+      "value": 1
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "AIME",
+      "value": 12
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "AMC10",
+      "value": 12
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "AMC12",
+      "value": 12
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "AMC8",
+      "value": 30
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "BMT",
+      "value": 3
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "CHMMC",
+      "value": 1
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "CMWMC",
+      "value": 1
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "DMM",
+      "value": 1
+    },
+    {
+      "source": "solid\ngeometry",
+      "target": "Others",
+      "value": 20
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "European\nKangaroo",
+      "value": 97
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "Grey\nKangaroo",
+      "value": 14
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "Junior\nKangaroo",
+      "value": 4
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "Pink\nKangaroo",
+      "value": 15
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "AIME",
+      "value": 5
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "AMC10",
+      "value": 10
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "AMC12",
+      "value": 4
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "AMC8",
+      "value": 12
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "CMWMC",
+      "value": 1
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "DMM",
+      "value": 1
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "HMMT",
+      "value": 2
+    },
+    {
+      "source": "transformation\ngeometry",
+      "target": "Others",
+      "value": 3
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "European\nKangaroo",
+      "value": 199
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "Grey\nKangaroo",
+      "value": 24
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "Junior\nKangaroo",
+      "value": 11
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "Pink\nKangaroo",
+      "value": 13
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "Senior",
+      "value": 3
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "AMC10",
+      "value": 2
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "AMC12",
+      "value": 8
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "AMC8",
+      "value": 34
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "BMT",
+      "value": 1
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "CHMMC",
+      "value": 3
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "DMM",
+      "value": 2
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "HMMT",
+      "value": 6
+    },
+    {
+      "source": "combinatorial\ngeometry",
+      "target": "Others",
+      "value": 2
+    },
+    {
+      "source": "Level 5",
+      "target": "topology",
+      "value": 4
+    },
+    {
+      "source": "Level 5",
+      "target": "algebra",
+      "value": 53
+    },
+    {
+      "source": "Level 5",
+      "target": "metric\ngeometry-length",
+      "value": 180
+    },
+    {
+      "source": "Level 5",
+      "target": "metric\ngeometry-area",
+      "value": 155
+    },
+    {
+      "source": "Level 5",
+      "target": "combinatorial\ngeometry",
+      "value": 32
+    },
+    {
+      "source": "Level 5",
+      "target": "combinatorics",
+      "value": 36
+    },
+    {
+      "source": "Level 5",
+      "target": "graph theory",
+      "value": 16
+    },
+    {
+      "source": "Level 5",
+      "target": "transformation\ngeometry",
+      "value": 21
+    },
+    {
+      "source": "Level 5",
+      "target": "solid\ngeometry",
+      "value": 35
+    },
+    {
+      "source": "Level 5",
+      "target": "descriptive\ngeometry",
+      "value": 56
+    },
+    {
+      "source": "Level 5",
+      "target": "statistics",
+      "value": 1
+    },
+    {
+      "source": "Level 5",
+      "target": "metric\ngeometry-angle",
+      "value": 43
+    },
+    {
+      "source": "Level 5",
+      "target": "arithmetic",
+      "value": 16
+    },
+    {
+      "source": "Level 5",
+      "target": "analytic\ngeometry",
+      "value": 17
+    },
+    {
+      "source": "Level 5",
+      "target": "logic",
+      "value": 19
+    },
+    {
+      "source": "topology",
+      "target": "European\nKangaroo",
+      "value": 20
+    },
+    {
+      "source": "topology",
+      "target": "Grey\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "topology",
+      "target": "Pink\nKangaroo",
+      "value": 1
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "European\nKangaroo",
+      "value": 135
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "Grey\nKangaroo",
+      "value": 32
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "Junior\nKangaroo",
+      "value": 14
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "Pink\nKangaroo",
+      "value": 32
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "Senior",
+      "value": 7
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "AIME",
+      "value": 19
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "AMC10",
+      "value": 59
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "AMC12",
+      "value": 61
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "AMC8",
+      "value": 62
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "BMT",
+      "value": 9
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "CHMMC",
+      "value": 3
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "CMIMC",
+      "value": 1
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "CMWMC",
+      "value": 4
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "DMM",
+      "value": 3
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "YaleGirlsMath",
+      "value": 2
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "JHMT",
+      "value": 6
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "HMMT",
+      "value": 4
+    },
+    {
+      "source": "metric\ngeometry-area",
+      "target": "Others",
+      "value": 47
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "European\nKangaroo",
+      "value": 37
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "Grey\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "Pink\nKangaroo",
+      "value": 4
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "Senior",
+      "value": 1
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "AIME",
+      "value": 1
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "AMC10",
+      "value": 3
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "AMC12",
+      "value": 10
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "AMC8",
+      "value": 10
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "CMIMC",
+      "value": 1
+    },
+    {
+      "source": "analytic\ngeometry",
+      "target": "Others",
+      "value": 15
+    },
+    {
+      "source": "descriptive\ngeometry",
+      "target": "European\nKangaroo",
+      "value": 92
+    },
+    {
+      "source": "descriptive\ngeometry",
+      "target": "Grey\nKangaroo",
+      "value": 7
+    },
+    {
+      "source": "descriptive\ngeometry",
+      "target": "Junior\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "descriptive\ngeometry",
+      "target": "AMC12",
+      "value": 1
+    },
+    {
+      "source": "descriptive\ngeometry",
+      "target": "AMC8",
+      "value": 2
+    },
+    {
+      "source": "combinatorics",
+      "target": "European\nKangaroo",
+      "value": 64
+    },
+    {
+      "source": "combinatorics",
+      "target": "Grey\nKangaroo",
+      "value": 13
+    },
+    {
+      "source": "combinatorics",
+      "target": "Junior\nKangaroo",
+      "value": 10
+    },
+    {
+      "source": "combinatorics",
+      "target": "Pink\nKangaroo",
+      "value": 21
+    },
+    {
+      "source": "combinatorics",
+      "target": "Senior",
+      "value": 4
+    },
+    {
+      "source": "combinatorics",
+      "target": "AIME",
+      "value": 9
+    },
+    {
+      "source": "combinatorics",
+      "target": "AMC10",
+      "value": 11
+    },
+    {
+      "source": "combinatorics",
+      "target": "AMC12",
+      "value": 4
+    },
+    {
+      "source": "combinatorics",
+      "target": "AMC8",
+      "value": 22
+    },
+    {
+      "source": "combinatorics",
+      "target": "CMIMC",
+      "value": 1
+    },
+    {
+      "source": "combinatorics",
+      "target": "ASMT",
+      "value": 1
+    },
+    {
+      "source": "combinatorics",
+      "target": "DMM",
+      "value": 3
+    },
+    {
+      "source": "combinatorics",
+      "target": "HMMT",
+      "value": 5
+    },
+    {
+      "source": "algebra",
+      "target": "European\nKangaroo",
+      "value": 212
+    },
+    {
+      "source": "algebra",
+      "target": "Grey\nKangaroo",
+      "value": 27
+    },
+    {
+      "source": "algebra",
+      "target": "Junior\nKangaroo",
+      "value": 10
+    },
+    {
+      "source": "algebra",
+      "target": "Pink\nKangaroo",
+      "value": 30
+    },
+    {
+      "source": "algebra",
+      "target": "Senior",
+      "value": 6
+    },
+    {
+      "source": "algebra",
+      "target": "AIME",
+      "value": 6
+    },
+    {
+      "source": "algebra",
+      "target": "AMC10",
+      "value": 11
+    },
+    {
+      "source": "algebra",
+      "target": "AMC12",
+      "value": 8
+    },
+    {
+      "source": "algebra",
+      "target": "AMC8",
+      "value": 30
+    },
+    {
+      "source": "algebra",
+      "target": "BMT",
+      "value": 1
+    },
+    {
+      "source": "algebra",
+      "target": "CHMMC",
+      "value": 1
+    },
+    {
+      "source": "algebra",
+      "target": "CMIMC",
+      "value": 1
+    },
+    {
+      "source": "algebra",
+      "target": "CMWMC",
+      "value": 2
+    },
+    {
+      "source": "Level 4",
+      "target": "metric\ngeometry-angle",
+      "value": 52
+    },
+    {
+      "source": "Level 4",
+      "target": "analytic\ngeometry",
+      "value": 38
+    },
+    {
+      "source": "Level 4",
+      "target": "topology",
+      "value": 7
+    },
+    {
+      "source": "Level 4",
+      "target": "combinatorial\ngeometry",
+      "value": 92
+    },
+    {
+      "source": "Level 4",
+      "target": "algebra",
+      "value": 94
+    },
+    {
+      "source": "Level 4",
+      "target": "descriptive\ngeometry",
+      "value": 26
+    },
+    {
+      "source": "Level 4",
+      "target": "logic",
+      "value": 29
+    },
+    {
+      "source": "Level 4",
+      "target": "solid\ngeometry",
+      "value": 78
+    },
+    {
+      "source": "Level 4",
+      "target": "metric\ngeometry-area",
+      "value": 161
+    },
+    {
+      "source": "Level 4",
+      "target": "metric\ngeometry-length",
+      "value": 138
+    },
+    {
+      "source": "Level 4",
+      "target": "transformation\ngeometry",
+      "value": 43
+    },
+    {
+      "source": "Level 4",
+      "target": "arithmetic",
+      "value": 12
+    },
+    {
+      "source": "Level 4",
+      "target": "combinatorics",
+      "value": 48
+    },
+    {
+      "source": "Level 4",
+      "target": "counting",
+      "value": 3
+    },
+    {
+      "source": "Level 4",
+      "target": "graph theory",
+      "value": 9
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "European\nKangaroo",
+      "value": 42
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "Grey\nKangaroo",
+      "value": 17
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "Junior\nKangaroo",
+      "value": 5
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "Pink\nKangaroo",
+      "value": 13
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "Senior",
+      "value": 3
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "AIME",
+      "value": 2
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "AMC10",
+      "value": 5
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "AMC12",
+      "value": 36
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "AMC8",
+      "value": 10
+    },
+    {
+      "source": "metric\ngeometry-angle",
+      "target": "Others",
+      "value": 40
+    },
+    {
+      "source": "statistics",
+      "target": "European\nKangaroo",
+      "value": 10
+    },
+    {
+      "source": "statistics",
+      "target": "Grey\nKangaroo",
+      "value": 1
+    },
+    {
+      "source": "statistics",
+      "target": "Pink\nKangaroo",
+      "value": 2
+    },
+    {
+      "source": "statistics",
+      "target": "AMC12",
+      "value": 1
+    },
+    {
+      "source": "statistics",
+      "target": "AMC8",
+      "value": 43
+    },
+    {
+      "source": "statistics",
+      "target": "BMT",
+      "value": 1
+    }
+  ]
+}
