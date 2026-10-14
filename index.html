@@ -1,127 +1,254 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Meng-Hao Guo</title>
-    <base href="https://menghaoguo.github.io/index.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meng-Hao Guo</title>
+<meta name="description" content="Meng-Hao Guo (国孟昊), Shuimu Scholar postdoctoral researcher at Tsinghua University, working on foundation models, embodied AI, ML systems and 3D generation.">
+<meta property="og:title" content="Meng-Hao Guo">
+<meta property="og:description" content="Meng-Hao Guo (国孟昊), Shuimu Scholar postdoctoral researcher at Tsinghua University, working on foundation models, embodied AI, ML systems and 3D generation.">
+<meta property="og:image" content="https://menghaoguo.github.io/guo.jpg">
+<link rel="icon" href="guo.jpg">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1016" media="(prefers-color-scheme: dark)">
+<script>
+  (function () {
+    var d = document.documentElement, t = null;
+    d.className += ' js';
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    d.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<h1 style="padding-left: 0.5em">Meng-Hao Guo (Ph.D student at Tsinghua University)</h1><hr>
-<td id="layout-menu">
-    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
-    <div class="menu-item"><a href="publication.html">Publications</a></div>
-    <div class="menu-item"><a href="group.html">Group</a></div>
-    <!-- <div class="menu-item"><a href="software.html">Software</a></div> -->
-    <div class="menu-item"><a href="misc.html">Miscellaneous</a></div>
-</td>
-<td id="layout-content">
-    <h1 style="margin-top: 0em">Home</a></h1><br>
-    <table class="imgtable"><tr valign="center">
-        <td><img src="guo.jpg" alt="Menghao Guo" border="0" width=160/></td>
-        <td align="left">
-            <br>
-            <p><span style="font-size: 110%"><b>Meng-Hao Guo(国孟昊 in Chinese)</b></span></p>
-            <p>
-                Ph.D student<br>
-                <a HREF="https://cg.cs.tsinghua.edu.cn/"> Graphics and Geometric Computing Group </a><br>
-                <a href="https://www.cs.tsinghua.edu.cn/" target="_blank"> Department of Computer Science and Technology, Tsinghua University</a>
-            </p>
-            <p>
-                Address: Room 3-523, Information Technology Building (FIT), Tsinghua University. <br>
-            </p>
-            <p>
-                E-mail: gmh [at] tsinghua.edu.cn<br>
-                [ <a href="https://scholar.google.com/citations?user=DnXVAgcAAAAJ" target="_blank">Google Scholar</a>
-                ]
-            </p>
-        </td>
-    </tr></table>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="guo.jpg" alt="" width="30" height="30"><span>Meng-Hao Guo</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html" class="current" aria-current="page">Home</a><a href="publication.html">Publications</a><a href="group.html">Group</a><a href="misc.html">Honors &amp; Services</a></nav>
+    <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+  </div>
+</header>
+<header class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__text">
+      <p class="hero__eyebrow">Shuimu Scholar Postdoc · Tsinghua University</p>
+      <h1 class="hero__name">Meng-Hao Guo <span class="hero__name-zh" lang="zh-CN">国孟昊</span></h1>
+      <p class="hero__tagline">I work on <strong>foundation models</strong>, <strong>embodied AI</strong>, <strong>machine learning systems</strong> and <strong>3D generation</strong>, with a long-standing interest in attention mechanisms for visual learning.</p>
+      <div class="hero__actions">
+        <a class="btn-pill btn-pill--primary" href="mailto:gmh@tsinghua.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+        <a class="btn-pill" href="https://scholar.google.com/citations?user=DnXVAgcAAAAJ"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar</a>
+        <a class="btn-pill" href="https://github.com/MenghaoGuo"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        <a class="btn-pill" href="group.html"><i class="fas fa-users" aria-hidden="true"></i> HamLab</a>
+      </div>
+      <ul class="hero__meta">
+        <li><i class="fas fa-university" aria-hidden="true"></i><a href="https://cg.cs.tsinghua.edu.cn/">CSCG Group</a>, Dept. of CS, Tsinghua University</li>
+        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Room 3-523, FIT Building, Beijing</li>
+      </ul>
+    </div>
+    <div class="hero__avatar"><img src="guo.jpg" alt="Meng-Hao Guo" width="240" height="280" fetchpriority="high"></div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <section class="section reveal" id="about">
+      <h2>About Me</h2>
+      <p>I am a <strong>"Shuimu Scholar" postdoctoral researcher</strong> in the <a href="https://www.cs.tsinghua.edu.cn/">Department of Computer Science and Technology</a>, Tsinghua University, working with Prof. <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm">Shi-Min Hu</a>. I received my Ph.D. from the same department, also under the supervision of Prof. Shi-Min Hu, and my B.Eng. from Xidian University.</p>
+      <p>I have published papers in top venues such as T-PAMI, ACM TOG, SIGGRAPH, NeurIPS, ICML, ICLR and CVPR, including two <strong>CVMJ Best Paper Awards</strong>. I am also a core developer of the <a href="https://cg.cs.tsinghua.edu.cn/jittor/">Jittor</a> deep learning framework. My research has been supported by the National Natural Science Foundation of China, and I was recognized among the <strong>World's Top 2% Scientists</strong> by Stanford University.</p>
+      <div class="stats">
+        <div class="stat"><b>11,800+</b><span>Citations</span></div>
+        <div class="stat"><b>17</b><span>h-index</span></div>
+        <div class="stat"><b>23</b><span>i10-index</span></div>
+        <div class="stat"><b>2</b><span>Best Paper Awards</span></div>
+      </div>
+      <p class="section-note">Citation metrics from <a href="https://scholar.google.com/citations?user=DnXVAgcAAAAJ">Google Scholar</a>, October 2026.</p>
+      <div class="tags"><span>Foundation Models</span><span>Multimodal Reasoning</span><span>Embodied AI</span><span>Machine Learning Systems</span><span>3D Generation</span><span>Attention Mechanisms</span></div>
+    </section>
+
+    <section class="section reveal" id="hiring">
+      <h2>Join Us</h2>
+      <div class="callout">
+        <i class="fas fa-bullhorn" aria-hidden="true"></i>
+        <p>I am always looking for highly self-motivated <strong>research interns</strong>, as well as prospective <strong>Ph.D. and Master's students</strong> (typically selected from interns). If you are interested in working with me, please email me with your CV. See <a href="group.html">HamLab</a> for details.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="news">
+      <h2>News</h2>
+      <ol class="timeline is-collapsed">
+<li class="timeline__item"><time class="timeline__date">2026.09</time><div class="timeline__text">Released <a href="https://robodawn.top/">RoboDawn</a>: <a href="https://arxiv.org/abs/2609.22966">Transferring the Intelligence of VLMs to Robotic Control</a>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2026.06</time><div class="timeline__text">One paper is accepted by <strong>ECCV 2026</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2026.05</time><div class="timeline__text">One paper is accepted by <strong>ICML 2026</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2026.03</time><div class="timeline__text">Two papers (Pixal3D and TopoCap) are accepted by <strong>SIGGRAPH 2026</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2026.01</time><div class="timeline__text"><a href="https://arxiv.org/abs/2510.13795">Bee</a> is accepted by <strong>ICLR 2026</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2026.01</time><div class="timeline__text">One paper is published in <strong>IEEE TVCG</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2025.09</time><div class="timeline__text">Two papers, including <a href="https://arxiv.org/abs/2505.16770">RBench-V</a>, are accepted by <strong>NeurIPS 2025</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2025.07</time><div class="timeline__text">Selected as a <strong>"Shuimu Scholar"</strong> at Tsinghua University.</div></li>
+<li class="timeline__item"><time class="timeline__date">2025.04</time><div class="timeline__text"><a href="https://arxiv.org/abs/2505.02018">R-Bench</a> is accepted by <strong>ICML 2025</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2025.04</time><div class="timeline__text"><a href="https://zjp-shadow.github.io/works/UniRig/">UniRig</a> is conditionally accepted by <strong>SIGGRAPH 2025</strong> (Journal Track).</div></li>
+<li class="timeline__item"><time class="timeline__date">2025.03</time><div class="timeline__text">One paper is accepted by <strong>CVPR 2025</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2024.12</time><div class="timeline__text">Received the <strong>Tsinghua University Special Scholarship</strong> (the highest honor for students at Tsinghua, 10 recipients per year).</div></li>
+<li class="timeline__item"><time class="timeline__date">2024.12</time><div class="timeline__text">Received the <strong>National Scholarship</strong>.</div></li>
+<li class="timeline__item"><time class="timeline__date">2024.09</time><div class="timeline__text">One paper is accepted by <strong>T-PAMI</strong>.</div></li>
+      </ol>
+      <button class="link-btn" type="button" data-toggle-news>Show all news ↓</button>
+    </section>
+
+    <section class="section" id="publications">
+      <h2>Selected Publications</h2>
+      <p class="section-note">* equal contribution. See the <a href="publication.html">full publication list</a> or <a href="https://scholar.google.com/citations?user=DnXVAgcAAAAJ">Google Scholar</a>.</p>
+      <div class="pub-list">
+<article class="pub-card reveal" data-tags="all preprint first selected">
+  <a class="pub-thumb" href="https://robodawn.top/" tabindex="-1" aria-hidden="true"><img src="images/pub/robotic.webp" alt="" loading="lazy"><span class="pub-badge">arXiv 2026</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://robodawn.top/">Transferring the Intelligence of VLMs to Robotic Control</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Zhe-Han Mo, Jia-Jun Wang, Yi Zhang, Kejin Wang, Yi-Xuan Deng, Jia-Peng Zhang, Yongming Rao, Shi-Min Hu</div>
+    <div class="pub-venue">arXiv preprint, 2026</div>
     
-    <div>
-        <h2><hr><a name="Biography"></a>Biography</h2>
-        <ul>
-            I am currently a "Shuimu Scholar" postdoctoral researcher in the Department of Computer Science at Tsinghua University, working with Prof. <a href="https://cg.cs.tsinghua.edu.cn/#people.htm#shimin.htm">Shi-Min Hu</a>. I earned my Ph.D. from the same department, where I was also supervised by Prof. <a href="https://cg.cs.tsinghua.edu.cn/#people.htm#shimin.htm">Shi-Min Hu</a>.
-            I have published more 15 papers in top journals and conferences such as T-PAMI, ACM TOG, CVPR, and SIGGRAPH. My work has accumulated over 7,500 citations on Google Scholar.
-            Besides, I am also the core developer of the Jittor deep learning framework.
-            I have received funding from the National Natural Science Foundation of China, 
-            and have been honored with multiple awards, including the National Scholarship, Tsinghua University Special Scholarship, and ByteDance Scholarship.
-            Additionally, I was recognized as World Top 2% Scientists by Stanford University.
-            <p>            <p>
-        </ul>
-    </div>
-
-
-    <div>
-        <h2><hr><a name="Hiring"></a>Hiring</h2>
-        <ul>
-            <p><strong style="color:red;">I am always looking for highly self-motivated research interns, as well as prospective Ph.D. and Master’s students (typically selected from interns). 
-            If you are interested in working with me, please don’t hesitate to reach out via email, and attach your CV. For more details, please refer to <a HREF="https://menghaoguo.github.io/group.html"> here </a>
- </strong></p>
-        </ul>
-    </div>
+    <div class="pub-links"><a href="https://robodawn.top/"><i class="fas fa-globe" aria-hidden="true"></i> Project Page</a><a href="https://arxiv.org/abs/2609.22966"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all conf published first selected">
+  <a class="pub-thumb" href="https://arxiv.org/abs/2505.16770" tabindex="-1" aria-hidden="true"><img src="images/pub/rbenchv.webp" alt="" loading="lazy"><span class="pub-badge">NeurIPS 2025</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2505.16770">RBench-V: A Primary Assessment for Visual Reasoning Models with Multimodal Outputs</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Xuanyu Chu, Qianrui Yang, Zhe-Han Mo, Yiqing Shen, Pei-lin Li, Xinjie Lin, Jinnian Zhang, Xin-Sheng Chen, Yi Zhang, Kiyohiro Nakayama, Zhengyang Geng, Houwen Peng, Han Hu, Shi-Min Hu</div>
+    <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2025</div>
     
+    <div class="pub-links"><a href="https://arxiv.org/abs/2505.16770"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all conf published first selected">
+  <a class="pub-thumb" href="https://arxiv.org/abs/2505.02018" tabindex="-1" aria-hidden="true"><img src="images/pub/rbench.webp" alt="" loading="lazy"><span class="pub-badge">ICML 2025</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2505.02018">R-Bench: Graduate-level Multi-disciplinary Benchmarks for LLM &amp; MLLM Complex Reasoning Evaluation</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Jiajun Xu, Yi Zhang, Jiaxi Song, Haoyang Peng, Yi-Xuan Deng, Xinzhi Dong, Kiyohiro Nakayama, Zhengyang Geng, Chen Wang, Bolin Ni, Guo-Wei Yang, Yongming Rao, Houwen Peng, Han Hu, Gordon Wetzstein, Shi-Min Hu</div>
+    <div class="pub-venue">International Conference on Machine Learning (ICML), 2025</div>
+    
+    <div class="pub-links"><a href="https://arxiv.org/abs/2505.02018"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all conf published selected">
+  <a class="pub-thumb" href="https://arxiv.org/abs/2510.13795" tabindex="-1" aria-hidden="true"><img src="images/pub/bee.webp" alt="" loading="lazy"><span class="pub-badge">ICLR 2026</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2510.13795">Bee: A High-Quality Corpus and Full-Stack Suite to Unlock Advanced Fully Open MLLMs</a></h3>
+    <div class="pub-authors">Yi Zhang, Bolin Ni, Xin-Sheng Chen, Heng-Rui Zhang, Yongming Rao, Houwen Peng, Qinglin Lu, Han Hu, <strong>Meng-Hao Guo</strong>, Shi-Min Hu</div>
+    <div class="pub-venue">International Conference on Learning Representations (ICLR), 2026</div>
+    
+    <div class="pub-links"><a href="https://arxiv.org/abs/2510.13795"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published selected">
+  <a class="pub-thumb" href="https://zjp-shadow.github.io/works/UniRig/" tabindex="-1" aria-hidden="true"><img src="images/pub/unirig.webp" alt="" loading="lazy"><span class="pub-badge">SIGGRAPH 2025</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://zjp-shadow.github.io/works/UniRig/">One Model to Rig Them All: Diverse Skeleton Rigging with UniRig</a></h3>
+    <div class="pub-authors">Jia-Peng Zhang, Cheng-Feng Pu, <strong>Meng-Hao Guo</strong>, Yan-Pei Cao, Shi-Min Hu</div>
+    <div class="pub-venue">ACM Transactions on Graphics (SIGGRAPH 2025)</div>
+    
+    <div class="pub-links"><a href="https://zjp-shadow.github.io/works/UniRig/"><i class="fas fa-globe" aria-hidden="true"></i> Project Page</a><a href="https://arxiv.org/abs/2504.12451"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/VAST-AI-Research/UniRig"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published selected">
+  <a class="pub-thumb" href="https://charactergen.github.io/" tabindex="-1" aria-hidden="true"><img src="images/pub/charactergen.webp" alt="" loading="lazy"><span class="pub-badge">SIGGRAPH 2024</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://charactergen.github.io/">CharacterGen: Efficient 3D Character Generation from Single Images with Multi-View Pose Canonicalization</a></h3>
+    <div class="pub-authors">Hao-Yang Peng, Jia-Peng Zhang, <strong>Meng-Hao Guo</strong>, Yan-Pei Cao, Shi-Min Hu</div>
+    <div class="pub-venue">ACM Transactions on Graphics (SIGGRAPH 2024)</div>
+    
+    <div class="pub-links"><a href="https://charactergen.github.io/"><i class="fas fa-globe" aria-hidden="true"></i> Project Page</a><a href="https://dl.acm.org/doi/pdf/10.1145/3658217"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/zjp-shadow/CharacterGen"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published first selected">
+  <a class="pub-thumb" href="https://link.springer.com/article/10.1007/S41095-022-0271-Y" tabindex="-1" aria-hidden="true"><img src="images/pub/survey.webp" alt="" loading="lazy"><span class="pub-badge">CVMJ 2022</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://link.springer.com/article/10.1007/S41095-022-0271-Y">Attention Mechanisms in Computer Vision: A Survey</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Tian-Xing Xu, Jiang-Jiang Liu, Zheng-Ning Liu, Peng-Tao Jiang, Tai-Jiang Mu, Song-Hai Zhang, Ralph R. Martin, Ming-Ming Cheng, Shi-Min Hu</div>
+    <div class="pub-venue">Computational Visual Media (CVMJ), 2022</div>
+    <div class="pub-flags"><span class="flag">Best Paper Award</span><span class="flag flag--blue">3,300+ citations</span></div>
+    <div class="pub-links"><a href="https://link.springer.com/article/10.1007/S41095-022-0271-Y"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/MenghaoGuo/Awesome-Vision-Attentions"><i class="fab fa-github" aria-hidden="true"></i> Awesome List</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published first selected">
+  <a class="pub-thumb" href="https://arxiv.org/abs/2012.09688" tabindex="-1" aria-hidden="true"><img src="images/pub/pct.webp" alt="" loading="lazy"><span class="pub-badge">CVMJ 2021</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2012.09688">PCT: Point Cloud Transformer</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Jun-Xiong Cai, Zheng-Ning Liu, Tai-Jiang Mu, Ralph R. Martin, Shi-Min Hu</div>
+    <div class="pub-venue">Computational Visual Media (CVMJ), 2021</div>
+    <div class="pub-flags"><span class="flag flag--blue">2,800+ citations</span></div>
+    <div class="pub-links"><a href="https://arxiv.org/abs/2012.09688"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/MenghaoGuo/PCT"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all conf published first selected">
+  <a class="pub-thumb" href="https://proceedings.neurips.cc/paper_files/paper/2022/file/08050f40fff41616ccfc3080e60a301a-Paper-Conference.pdf" tabindex="-1" aria-hidden="true"><img src="images/pub/segnext.webp" alt="" loading="lazy"><span class="pub-badge">NeurIPS 2022</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/08050f40fff41616ccfc3080e60a301a-Paper-Conference.pdf">SegNeXt: Rethinking Convolutional Attention Design for Semantic Segmentation</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Cheng-Ze Lu, Qibin Hou, Zhengning Liu, Ming-Ming Cheng, Shi-Min Hu</div>
+    <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2022</div>
+    <div class="pub-flags"><span class="flag flag--blue">1,800+ citations</span></div>
+    <div class="pub-links"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/08050f40fff41616ccfc3080e60a301a-Paper-Conference.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/Visual-Attention-Network/SegNeXt"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published first selected">
+  <a class="pub-thumb" href="https://link.springer.com/article/10.1007/s41095-023-0364-2" tabindex="-1" aria-hidden="true"><img src="images/pub/van.webp" alt="" loading="lazy"><span class="pub-badge">CVMJ 2023</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://link.springer.com/article/10.1007/s41095-023-0364-2">Visual Attention Network</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Cheng-Ze Lu, Zheng-Ning Liu, Ming-Ming Cheng, Shi-Min Hu</div>
+    <div class="pub-venue">Computational Visual Media (CVMJ), 2023</div>
+    <div class="pub-flags"><span class="flag">Best Paper Award</span><span class="flag flag--blue">1,500+ citations</span></div>
+    <div class="pub-links"><a href="https://link.springer.com/article/10.1007/s41095-023-0364-2"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/Visual-Attention-Network"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all journal published first selected">
+  <a class="pub-thumb pub-thumb--empty" href="https://arxiv.org/abs/2105.02358" tabindex="-1" aria-hidden="true">T-PAMI</a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2105.02358">Beyond Self-Attention: External Attention Using Two Linear Layers for Visual Tasks</a></h3>
+    <div class="pub-authors"><strong>Meng-Hao Guo</strong>, Zheng-Ning Liu, Tai-Jiang Mu, Shi-Min Hu</div>
+    <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</div>
+    <div class="pub-flags"><span class="flag flag--blue">950+ citations</span></div>
+    <div class="pub-links"><a href="https://arxiv.org/abs/2105.02358"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/MenghaoGuo/EANet"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+<article class="pub-card reveal" data-tags="all conf published first selected">
+  <a class="pub-thumb" href="https://openreview.net/pdf?id=1FvkSpWosOl" tabindex="-1" aria-hidden="true"><img src="images/pub/ham.webp" alt="" loading="lazy"><span class="pub-badge">ICLR 2021</span></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://openreview.net/pdf?id=1FvkSpWosOl">Is Attention Better Than Matrix Decomposition?</a></h3>
+    <div class="pub-authors">Zhengyang Geng*, <strong>Meng-Hao Guo*</strong>, Hongxu Chen, Xia Li, Ke Wei, Zhouchen Lin</div>
+    <div class="pub-venue">International Conference on Learning Representations (ICLR), 2021</div>
+    <div class="pub-flags"><span class="flag flag--blue">Equal contribution</span></div>
+    <div class="pub-links"><a href="https://openreview.net/pdf?id=1FvkSpWosOl"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a><a href="https://github.com/Gsunshine/Enjoy-Hamburger"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+  </div>
+</article>
+      </div>
+    </section>
 
-
-    <div>
-        <h2><hr><a name="interest"></a>Research Interests</h2>
-        <ul>
-            <li><p>Foundation Models</p></li>
-            <li><p>Embodied AI</p></li>
-            <li><p>Machine Learning System</p></li>
-            <li><p>3D Generation.</p></li>
-        </ul>
+    <section class="section reveal" id="education">
+      <h2>Education &amp; Experience</h2>
+      <ul class="edu">
+        <li><i class="fas fa-flask" aria-hidden="true"></i><div><h3>"Shuimu Scholar" Postdoctoral Researcher</h3><p>Department of Computer Science and Technology, Tsinghua University. Advisor: Prof. <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm">Shi-Min Hu</a></p></div><time>2025 – Present</time></li>
+        <li><i class="fas fa-graduation-cap" aria-hidden="true"></i><div><h3>Ph.D. in Computer Science</h3><p>Department of Computer Science and Technology, Tsinghua University. Advisor: Prof. <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm">Shi-Min Hu</a></p></div><time>2020 – 2025</time></li>
+        <li><i class="fas fa-school" aria-hidden="true"></i><div><h3>B.Eng. in Computer Science</h3><p>School of Computer Science and Technology, Xidian University. Advisor: Prof. <a href="https://faculty.xidian.edu.cn/WNN/zh_CN/index.htm">Nannan Wang</a></p></div><time>2016 – 2020</time></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>&copy; 2026 Meng-Hao Guo &middot; Tsinghua University</div>
+    <div class="site-footer__links">
+      <a href="mailto:gmh@tsinghua.edu.cn" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://scholar.google.com/citations?user=DnXVAgcAAAAJ" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+      <a href="https://github.com/MenghaoGuo" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
     </div>
-
-    <div>
-        <h2><hr><a name="edu"></a>Education</h2>
-        <ul>
-            <li><p>
-                <b>Doctor of Philosophy</b> (August 2020--Now)<br>
-                Department of Computer Science and Technology, Tsinghua University.<br>
-                Supervised by Prof. <a href="https://cg.cs.tsinghua.edu.cn/#people.htm#shimin.htm"> Shi-Min Hu </a>.
-            </p></li>
-            <li><p>
-                <b>Bachelor</b> (September 2016--June 2020)<br>
-                School of Computer Science and Technology, Xidian University, Xi'an, China.<br>
-                Supervised by Prof. <a href="https://faculty.xidian.edu.cn/WNN/zh_CN/index.htm"> Nannan Wang</a>.<br> 
-            </p></li>
-        </ul>
-    </div>
-
-    <div>
-        <h2><hr><a name="new"></a>News</h2>
-        <ul>
-            <li><p>
-                <b>2025.07: Selected as a "Shuimu Scholar" at Tsinghua University.
-            </b><br>
-            </p></li>
-            <li><p>
-                <b>2025.04: One paper is accepted by ICML 2025. </b><br>
-            </p></li>
-            <li><p>
-                <b>2025.04: One paper is conditionally accepted by SIGGRAPH 2025 (Journal Track). </b><br>
-            </p></li>
-            <li><p>
-                <b>2025.03: One paper is accepted by CVPR 2025. </b><br>
-            </p></li>
-            <li><p>
-                <b>2024.12: I received the Tsinghua University Special Scholarship (the highest scholarship for students at Tsinghua University, 10 students per year). </b><br>
-            </p></li>
-            <li><p>
-                <b>2024.12: I received the National Scholarship (Top 2%). </b><br>
-            </p></li>
-            <li><p>
-                <b>2024.09: One paper is accepted by T-PAMI. </b><br>
-            </p></li>
-        </ul>
-    </div>
-
-</td>
-</tr>
-</table>
+  </div>
+</footer>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+<script src="site.js" defer></script>
 </body>
 </html>
