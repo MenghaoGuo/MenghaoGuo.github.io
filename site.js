@@ -52,28 +52,4 @@
       more.textContent = collapsed ? 'Show all news ↓' : 'Show less ↑';
     });
   }
-
-  // Publication filters
-  var filters = document.querySelectorAll('.filters button');
-  if (filters.length) {
-    var cards = document.querySelectorAll('[data-tags]');
-    var years = document.querySelectorAll('.pub-year');
-    var count = document.querySelector('.pub-count span');
-    filters.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var f = btn.getAttribute('data-filter');
-        filters.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
-        var n = 0;
-        cards.forEach(function (c) {
-          var show = f === 'all' || c.getAttribute('data-tags').split(' ').indexOf(f) !== -1;
-          c.hidden = !show;
-          if (show) n++;
-        });
-        years.forEach(function (y) {
-          y.hidden = !y.querySelector('[data-tags]:not([hidden])');
-        });
-        if (count) count.textContent = n;
-      });
-    });
-  }
 })();
