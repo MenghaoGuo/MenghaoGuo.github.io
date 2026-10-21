@@ -390,17 +390,6 @@ main { padding: 16px 0 40px; }
 }
 .pub-thumb img { width: 100%; height: 100%; object-fit: contain; transition: transform .3s ease; }
 .pub-card:hover .pub-thumb img { transform: scale(1.03); }
-.pub-thumb--empty {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--accent-soft), color-mix(in srgb, var(--accent-2) 14%, var(--bg-soft)));
-  color: var(--accent);
-  font-weight: 800;
-  font-size: 22px;
-  letter-spacing: .02em;
-  text-align: center;
-  padding: 12px;
-}
 .pub-badge {
   position: absolute;
   left: 8px;
@@ -446,6 +435,7 @@ main { padding: 16px 0 40px; }
 .pub-year { padding-top: 28px; }
 .pub-year > h2 { font-size: 22px; }
 .pub-card--compact { grid-template-columns: 180px 1fr; gap: 18px; padding: 14px; }
+.pub-card.pub-card--nothumb { grid-template-columns: 1fr; }
 
 /* ===== Generic lists / cards ===== */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
@@ -532,7 +522,6 @@ main { padding: 16px 0 40px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .pub-card, .pub-card--compact { grid-template-columns: 1fr; }
   .pub-thumb { max-width: 420px; }
-  .pub-thumb--empty { display: none; }
 }
 
 @media (max-width: 680px) {
