@@ -49,7 +49,7 @@
   if (more && news) {
     more.addEventListener('click', function () {
       var collapsed = news.classList.toggle('is-collapsed');
-      more.textContent = collapsed ? 'Show all news ↓' : 'Show less ↑';
+      more.textContent = collapsed ? more.getAttribute('data-more') : more.getAttribute('data-less');
     });
   }
 })();
